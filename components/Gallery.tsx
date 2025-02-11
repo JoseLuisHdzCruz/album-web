@@ -25,7 +25,7 @@ export default function Gallery() {
   useEffect(() => {
     const fetchAlbums = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/albums");
+        const response = await fetch("https://formal-lyndsey-universidad-uthh-255ac07b.koyeb.app/api/albums");
         if (!response.ok) {
           throw new Error("Error al cargar los álbumes");
         }

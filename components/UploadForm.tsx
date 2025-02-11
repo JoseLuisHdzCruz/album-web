@@ -36,7 +36,7 @@ export default function UploadForm() {
       formData.append("categoria", category); // Agrega la categoría
 
       const response = await fetch(
-        `http://localhost:5000/api/albums`, // Reemplaza con el ID del álbum que deseas actualizar
+        `https://formal-lyndsey-universidad-uthh-255ac07b.koyeb.app/api/albums`, // Reemplaza con el ID del álbum que deseas actualizar
         {
           method: "POST",
           body: formData,
