@@ -31,6 +31,7 @@ export default function Gallery() {
         }
         const data: Album[] = await response.json();
         setAlbums(data);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("No se pudieron cargar los álbumes. Inténtalo más tarde.");
       } finally {
@@ -81,6 +82,7 @@ export default function Gallery() {
       link.click();
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       alert("No se pudo descargar la imagen. Inténtalo más tarde.");
     }

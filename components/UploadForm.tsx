@@ -49,6 +49,7 @@ export default function UploadForm() {
 
       setSuccess(true);
       setError(null);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       setError("No se pudo actualizar el álbum. Inténtalo más tarde.");
     } finally {
